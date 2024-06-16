@@ -26,9 +26,9 @@ def question_generate(number):
 
     question_string += plus_or_minus()
 
-    if coefficient == '3':
+    if '3' in coefficient:
         question_string += str(6 * random.randint(1, 4))
-    elif coefficient == '2':
+    elif '2' in coefficient:
         question_string += str(4 * random.randint(1, 6))
     else:
         question_string += str(2 * random.randint(1, 9))
